@@ -1,0 +1,6 @@
+[build]
+  publish = "dist"
+  command = "python3 tools/build.py"
+
+[build.environment]
+  PYTHON_VERSION = "3.11"
