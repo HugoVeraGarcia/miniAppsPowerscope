@@ -1,6 +1,9 @@
 {
  "name": "PowerScope",
- "logo": ["Power", "Scope"],
+ "logo": [
+  "Power",
+  "Scope"
+ ],
  "tagline": "Portable power station reviews & runtime calculator",
  "footer_blurb": "Independent portable power station reviews, spec-by-spec comparisons and a calculator that tells you what each one can actually run.",
  "base_url": "https://powerstations.specversus.com",
@@ -8,97 +11,404 @@
  "year": 2026,
  "show_prices": true,
  "contact_email": "soporte.microtools.lat@gmail.com",
- "calculator": {"efficiency": 0.85, "sun_hours": 4.5, "solar_derate": 0.75},
+ "calculator": {
+  "efficiency": 0.85,
+  "sun_hours": 4.5,
+  "solar_derate": 0.75
+ },
  "categories": [
-  {"slug": "portable", "name": "Portable (under 15 lb)", "short": "Portable", "icon": "feather", "rule": "weight_lb<=15", "guide": "best-small-power-station-for-camping",
-   "intro": "Power stations you can carry in one hand: 128 to 519 Wh for phones, laptops, lights, a CPAP without heat or a 12 V cooler."},
-  {"slug": "budget", "name": "Under $300", "short": "Under $300", "icon": "tag", "rule": "price<=300", "guide": "best-power-station-under-500",
-   "intro": "The cheapest power stations worth buying. Most are 250–520 Wh, and the better ones use long-life LiFePO4 cells."},
-  {"slug": "home-backup", "name": "Home backup (1,000 Wh+)", "short": "1 kWh+", "icon": "home", "rule": "capacity_wh>=1000", "guide": "best-power-station-for-home-backup",
-   "intro": "1 kWh or more: enough to keep a fridge, router, lights and phones going through a typical outage, and to run a CPAP for several nights."},
-  {"slug": "whole-home", "name": "Big batteries (2,000 Wh+)", "short": "2 kWh+", "icon": "battery", "rule": "capacity_wh>=2000", "guide": "best-power-station-for-home-backup",
-   "intro": "2 to 3.6 kWh stations for multi-day outages, RVs and high-draw appliances. Several expand to 10 kWh or more."},
-  {"slug": "ups", "name": "UPS mode (instant switchover)", "short": "UPS", "icon": "plug", "rule": "spec:ups_ms", "guide": null,
-   "intro": "Stations that switch to battery in 10–20 ms when the grid drops, so PCs, routers and CPAP machines keep running without a reboot."},
-  {"slug": "fast-charging", "name": "Fast charging (about an hour)", "short": "Fast charging", "icon": "bolt", "rule": "tag:fastcharge", "guide": null,
-   "intro": "Stations that refill from the wall in roughly an hour, or reach 80% in under 50 minutes — handy before a storm or between camping days."},
-  {"slug": "solar", "name": "Solar-ready (500 W+ solar input)", "short": "Solar 500 W+", "icon": "sun", "rule": "solar_w>=500", "guide": "best-solar-generator",
-   "intro": "Stations that accept at least 500 W of solar panels, so a sunny day can refill most or all of the battery."},
-  {"slug": "expandable", "name": "Expandable capacity", "short": "Expandable", "icon": "layers", "rule": "spec:expandable_wh", "guide": null,
-   "intro": "Start with one battery and add extra packs later. Expansion batteries are sold separately."}
+  {
+   "slug": "portable",
+   "name": "Portable (under 15 lb)",
+   "short": "Portable",
+   "icon": "feather",
+   "rule": "weight_lb<=15",
+   "guide": "best-small-power-station-for-camping",
+   "intro": "Power stations you can carry in one hand: 128 to 519 Wh for phones, laptops, lights, a CPAP without heat or a 12 V cooler."
+  },
+  {
+   "slug": "budget",
+   "name": "Under $300",
+   "short": "Under $300",
+   "icon": "tag",
+   "rule": "price<=300",
+   "guide": "best-power-station-under-500",
+   "intro": "The cheapest power stations worth buying. Most are 250–520 Wh, and the better ones use long-life LiFePO4 cells."
+  },
+  {
+   "slug": "home-backup",
+   "name": "Home backup (1,000 Wh+)",
+   "short": "1 kWh+",
+   "icon": "home",
+   "rule": "capacity_wh>=1000",
+   "guide": "best-power-station-for-home-backup",
+   "intro": "1 kWh or more: enough to keep a fridge, router, lights and phones going through a typical outage, and to run a CPAP for several nights."
+  },
+  {
+   "slug": "whole-home",
+   "name": "Big batteries (2,000 Wh+)",
+   "short": "2 kWh+",
+   "icon": "battery",
+   "rule": "capacity_wh>=2000",
+   "guide": "best-power-station-for-home-backup",
+   "intro": "2 to 3.6 kWh stations for multi-day outages, RVs and high-draw appliances. Several expand to 10 kWh or more."
+  },
+  {
+   "slug": "ups",
+   "name": "UPS mode (instant switchover)",
+   "short": "UPS",
+   "icon": "plug",
+   "rule": "spec:ups_ms",
+   "guide": null,
+   "intro": "Stations that switch to battery in 10–20 ms when the grid drops, so PCs, routers and CPAP machines keep running without a reboot."
+  },
+  {
+   "slug": "fast-charging",
+   "name": "Fast charging (about an hour)",
+   "short": "Fast charging",
+   "icon": "bolt",
+   "rule": "tag:fastcharge",
+   "guide": null,
+   "intro": "Stations that refill from the wall in roughly an hour, or reach 80% in under 50 minutes — handy before a storm or between camping days."
+  },
+  {
+   "slug": "solar",
+   "name": "Solar-ready (500 W+ solar input)",
+   "short": "Solar 500 W+",
+   "icon": "sun",
+   "rule": "solar_w>=500",
+   "guide": "best-solar-generator",
+   "intro": "Stations that accept at least 500 W of solar panels, so a sunny day can refill most or all of the battery."
+  },
+  {
+   "slug": "expandable",
+   "name": "Expandable capacity",
+   "short": "Expandable",
+   "icon": "layers",
+   "rule": "spec:expandable_wh",
+   "guide": null,
+   "intro": "Start with one battery and add extra packs later. Expansion batteries are sold separately."
+  }
  ],
  "guides": [
-  {"slug": "best-portable-power-station-2026", "title": "Best Portable Power Station (2026)", "h1": "The best portable power stations in 2026",
+  {
+   "slug": "best-portable-power-station-2026",
+   "title": "Best Portable Power Station (2026)",
+   "h1": "The best portable power stations in 2026",
    "description": "The best portable power stations on Amazon right now, ranked by our editor score across capacity, output, charging, solar, portability, battery life and value.",
-   "rank_by": "overall", "filter": null, "limit": 5,
-   "intro": ["A portable power station is a big LiFePO4 battery with an inverter, outlets and a charger in one box. The right one depends on what you plug in: a 300 Wh unit handles phones, laptops and a CPAP without heat; a 1 kWh unit runs a fridge through a typical outage; 2 kWh and up covers multi-day outages and RVs.",
-             "We rank every station by our editor score, which weighs capacity and value most, then output, battery longevity, charging speed, solar input and portability. Use the runtime calculator to check any pick against the devices you actually own."],
-   "criteria": [["Capacity (Wh) sets the runtime", "Divide usable watt-hours (about 85% of the rating once the inverter's losses are counted) by your devices' watts. A 1,024 Wh station runs a 40 W CPAP for about 21 hours."],
-                ["Output (W) sets what you can plug in", "Add up everything that runs at the same time. Fridges, pumps and air conditioners also need a startup surge two to five times their running watts."],
-                ["LiFePO4 lasts much longer", "Every current model here except one uses LiFePO4 cells rated for 3,000 or more cycles — roughly 10 years of regular use."],
-                ["Charging speed matters before storms", "Newer models refill from the wall in about an hour. Older or budget models take three to four."]],
-   "faq": [["What size power station do I need?", "Add up the watt-hours your devices use per day (watts × hours) and divide by 0.85. A fridge, router, lights and phones need about 1,500–2,000 Wh a day; a CPAP without heat about 300–400 Wh a night."],
-           ["Can a power station run a refrigerator?", "Yes, if its output exceeds the fridge's startup surge (often 600–1,200 W) and it has enough capacity. A typical full-size fridge uses 1–1.5 kWh a day, so a 1 kWh station covers most of a day and a 2 kWh station more than a day."],
-           ["Is a power station the same as a generator?", "It does the same job without fuel, noise or fumes, so it can be used indoors. It stores less energy than a gas generator's tank, but you can recharge it from the wall, a car or solar panels."]]},
-  {"slug": "best-power-station-for-home-backup", "title": "Best Power Station for Home Backup (2026)", "h1": "The best power stations for home backup",
+   "rank_by": "overall",
+   "filter": null,
+   "limit": 5,
+   "intro": [
+    "A portable power station is a big LiFePO4 battery with an inverter, outlets and a charger in one box. The right one depends on what you plug in: a 300 Wh unit handles phones, laptops and a CPAP without heat; a 1 kWh unit runs a fridge through a typical outage; 2 kWh and up covers multi-day outages and RVs.",
+    "We rank every station by our editor score, which weighs capacity and value most, then output, battery longevity, charging speed, solar input and portability. Use the runtime calculator to check any pick against the devices you actually own."
+   ],
+   "criteria": [
+    [
+     "Capacity (Wh) sets the runtime",
+     "Divide usable watt-hours (about 85% of the rating once the inverter's losses are counted) by your devices' watts. A 1,024 Wh station runs a 40 W CPAP for about 21 hours."
+    ],
+    [
+     "Output (W) sets what you can plug in",
+     "Add up everything that runs at the same time. Fridges, pumps and air conditioners also need a startup surge two to five times their running watts."
+    ],
+    [
+     "LiFePO4 lasts much longer",
+     "Every current model here except one uses LiFePO4 cells rated for 3,000 or more cycles — roughly 10 years of regular use."
+    ],
+    [
+     "Charging speed matters before storms",
+     "Newer models refill from the wall in about an hour. Older or budget models take three to four."
+    ]
+   ],
+   "faq": [
+    [
+     "What size power station do I need?",
+     "Add up the watt-hours your devices use per day (watts × hours) and divide by 0.85. A fridge, router, lights and phones need about 1,500–2,000 Wh a day; a CPAP without heat about 300–400 Wh a night."
+    ],
+    [
+     "Can a power station run a refrigerator?",
+     "Yes, if its output exceeds the fridge's startup surge (often 600–1,200 W) and it has enough capacity. A typical full-size fridge uses 1–1.5 kWh a day, so a 1 kWh station covers most of a day and a 2 kWh station more than a day."
+    ],
+    [
+     "Is a power station the same as a generator?",
+     "It does the same job without fuel, noise or fumes, so it can be used indoors. It stores less energy than a gas generator's tank, but you can recharge it from the wall, a car or solar panels."
+    ]
+   ]
+  },
+  {
+   "slug": "best-power-station-for-home-backup",
+   "title": "Best Power Station for Home Backup (2026)",
+   "h1": "The best power stations for home backup",
    "description": "The best portable power stations for power outages: enough capacity and output for a fridge, router, lights and medical devices, ranked by our data.",
-   "rank_by": "backup", "filter": "capacity_wh>=1000", "limit": 5,
-   "intro": ["For outages, capacity and output matter most. A full-size fridge alone uses 1 to 1.5 kWh a day and needs up to 1,200 W to start its compressor; add a router, lights and phones and you're near 2 kWh a day.",
-             "We rank stations of 1,000 Wh or more on capacity, output, battery longevity and value, with a bonus for instant UPS switchover. Plug your own appliances into the runtime calculator to see how long each one lasts."],
-   "criteria": [["Budget by the day", "Estimate your daily watt-hours, then multiply by the days you want to cover without recharging."],
-                ["Check startup surge", "Fridges, freezers, sump and well pumps need a brief surge well above their running watts. Surge ratings of 3,000 W or more handle most homes."],
-                ["UPS mode", "A 10–20 ms switchover keeps a router, PC or CPAP running when the grid drops, without you touching anything."],
-                ["Expansion and solar", "Expandable models and 500 W+ solar input let you ride out multi-day outages."]],
-   "faq": [["How long will a 2,000 Wh power station run a fridge?", "About 30–40 hours for a typical full-size fridge using 1.2 kWh a day, after inverter losses. Newer, smaller fridges last longer."],
-           ["Can a power station power my whole house?", "Not a whole house at once. Large units (3,600 W) paired with a transfer switch can run selected circuits like the fridge, furnace blower, lights and a well pump."],
-           ["Should I keep it plugged in all the time?", "Yes, most can sit on the charger in UPS mode. Some models draw 15–35 W at idle with the inverter on, so switch AC off when you don't need it during an outage."]]},
-  {"slug": "best-power-station-for-cpap", "title": "Best Power Station for CPAP (2026)", "h1": "The best power stations for a CPAP machine",
+   "rank_by": "backup",
+   "filter": "capacity_wh>=1000",
+   "limit": 5,
+   "intro": [
+    "For outages, capacity and output matter most. A full-size fridge alone uses 1 to 1.5 kWh a day and needs up to 1,200 W to start its compressor; add a router, lights and phones and you're near 2 kWh a day.",
+    "We rank stations of 1,000 Wh or more on capacity, output, battery longevity and value, with a bonus for instant UPS switchover. Plug your own appliances into the runtime calculator to see how long each one lasts."
+   ],
+   "criteria": [
+    [
+     "Budget by the day",
+     "Estimate your daily watt-hours, then multiply by the days you want to cover without recharging."
+    ],
+    [
+     "Check startup surge",
+     "Fridges, freezers, sump and well pumps need a brief surge well above their running watts. Surge ratings of 3,000 W or more handle most homes."
+    ],
+    [
+     "UPS mode",
+     "A 10–20 ms switchover keeps a router, PC or CPAP running when the grid drops, without you touching anything."
+    ],
+    [
+     "Expansion and solar",
+     "Expandable models and 500 W+ solar input let you ride out multi-day outages."
+    ]
+   ],
+   "faq": [
+    [
+     "How long will a 2,000 Wh power station run a fridge?",
+     "About 30–40 hours for a typical full-size fridge using 1.2 kWh a day, after inverter losses. Newer, smaller fridges last longer."
+    ],
+    [
+     "Can a power station power my whole house?",
+     "Not a whole house at once. Large units (3,600 W) paired with a transfer switch can run selected circuits like the fridge, furnace blower, lights and a well pump."
+    ],
+    [
+     "Should I keep it plugged in all the time?",
+     "Yes, most can sit on the charger in UPS mode. Some models draw 15–35 W at idle with the inverter on, so switch AC off when you don't need it during an outage."
+    ]
+   ]
+  },
+  {
+   "slug": "best-power-station-for-cpap",
+   "title": "Best Power Station for CPAP (2026)",
+   "h1": "The best power stations for a CPAP machine",
    "description": "Which portable power stations run a CPAP all night — with or without the heated humidifier — ranked by nights of runtime, noise, UPS and value.",
-   "rank_by": "cpap", "filter": "capacity_wh>=250", "limit": 5,
-   "intro": ["A CPAP without the heated humidifier draws about 30–60 W; with heat it's closer to 90 W. Over an eight-hour night that's roughly 300–400 Wh without heat and 700 Wh or more with it, before inverter losses.",
-             "We rank stations of 250 Wh or more on capacity, battery life, value and portability, with a bonus for UPS mode so the machine keeps running if the power drops while you sleep. Always confirm your machine's wattage on its power supply label."],
-   "criteria": [["Nights, not hours", "Multiply your CPAP's watts by 8 hours and divide into 85% of the station's capacity to get nights per charge."],
-                ["Skip the heat when you can", "Turning off the heated humidifier and tube can double or triple runtime."],
-                ["UPS mode", "A 10 ms switchover means an outage at 3 a.m. doesn't stop therapy."],
-                ["DC is more efficient", "Many CPAPs have a 12 V or 24 V DC adapter. Running from DC skips the inverter and can add 15–20% runtime."]],
-   "faq": [["How many nights will a 1,000 Wh power station run a CPAP?", "About two nights with a heated humidifier (~90 W) or four to five nights without heat (~40 W)."],
-           ["Is it safe to run a CPAP from a power station?", "Yes. All the stations here output pure sine wave AC, which CPAP power supplies expect. Check your machine's manual for DC options."],
-           ["Is a power station quiet enough for a bedroom?", "At CPAP loads most fans stay off or near silent; several models are rated at 25–30 dB."]]},
-  {"slug": "best-power-station-under-500", "title": "Best Power Station Under $500 (2026)", "h1": "The best power stations under $500",
+   "rank_by": "cpap",
+   "filter": "capacity_wh>=250",
+   "limit": 5,
+   "intro": [
+    "A CPAP without the heated humidifier draws about 30–60 W; with heat it's closer to 90 W. Over an eight-hour night that's roughly 300–400 Wh without heat and 700 Wh or more with it, before inverter losses.",
+    "We rank stations of 250 Wh or more on capacity, battery life, value and portability, with a bonus for UPS mode so the machine keeps running if the power drops while you sleep. Always confirm your machine's wattage on its power supply label."
+   ],
+   "criteria": [
+    [
+     "Nights, not hours",
+     "Multiply your CPAP's watts by 8 hours and divide into 85% of the station's capacity to get nights per charge."
+    ],
+    [
+     "Skip the heat when you can",
+     "Turning off the heated humidifier and tube can double or triple runtime."
+    ],
+    [
+     "UPS mode",
+     "A 10 ms switchover means an outage at 3 a.m. doesn't stop therapy."
+    ],
+    [
+     "DC is more efficient",
+     "Many CPAPs have a 12 V or 24 V DC adapter. Running from DC skips the inverter and can add 15–20% runtime."
+    ]
+   ],
+   "faq": [
+    [
+     "How many nights will a 1,000 Wh power station run a CPAP?",
+     "About two nights with a heated humidifier (~90 W) or four to five nights without heat (~40 W)."
+    ],
+    [
+     "Is it safe to run a CPAP from a power station?",
+     "Yes. All the stations here output pure sine wave AC, which CPAP power supplies expect. Check your machine's manual for DC options."
+    ],
+    [
+     "Is a power station quiet enough for a bedroom?",
+     "At CPAP loads most fans stay off or near silent; several models are rated at 25–30 dB."
+    ]
+   ]
+  },
+  {
+   "slug": "best-power-station-under-500",
+   "title": "Best Power Station Under $500 (2026)",
+   "h1": "The best power stations under $500",
    "description": "The best portable power stations under $500, from $113 travel units to full 1 kWh LiFePO4 stations, ranked by value, capacity and battery life.",
-   "rank_by": "value", "filter": "price<=500", "limit": 5,
-   "intro": ["$500 now buys a full 1 kWh LiFePO4 power station that recharges in about an hour — something that cost twice as much two years ago. Below $300 you get 250–520 Wh for camping, travel and small backup jobs.",
-             "We rank everything under $500 on value first, then capacity, battery longevity, output and charging speed."],
-   "criteria": [["Price per Wh", "Divide the price by the capacity. Under $0.50 per Wh is good value; the best deals here are around $0.35–0.45."],
-                ["LiFePO4 over lithium-ion", "LiFePO4 lasts 3,000+ cycles. If a listing doesn't say which chemistry it uses, assume fewer cycles."],
-                ["Output for your devices", "300 W handles electronics; 600 W adds small appliances; 1,500 W+ runs a fridge, coffee maker or microwave."],
-                ["Warranty and seller", "Five-year warranties are now common from the major brands."]],
-   "faq": [["What's the best power station for the money?", "At our price check, the BLUETTI AC180 ($449, 1,152 Wh) and Anker SOLIX C1000 Gen 2 ($499.99, 1,024 Wh, 2,000 W) offered the most per dollar under $500."],
-           ["Are cheap power stations safe?", "Stick to listings that state LiFePO4 cells and a warranty. They're less prone to thermal problems and last far longer."],
-           ["Will prices drop on Black Friday?", "Power stations are among the most heavily discounted categories on Prime Day and Black Friday; check the deals page."]]},
-  {"slug": "best-small-power-station-for-camping", "title": "Best Small Power Station for Camping (2026)", "h1": "The best small power stations for camping",
+   "rank_by": "value",
+   "filter": "price<=500",
+   "limit": 5,
+   "intro": [
+    "$500 now buys a full 1 kWh LiFePO4 power station that recharges in about an hour — something that cost twice as much two years ago. Below $300 you get 250–520 Wh for camping, travel and small backup jobs.",
+    "We rank everything under $500 on value first, then capacity, battery longevity, output and charging speed."
+   ],
+   "criteria": [
+    [
+     "Price per Wh",
+     "Divide the price by the capacity. Under $0.50 per Wh is good value; the best deals here are around $0.35–0.45."
+    ],
+    [
+     "LiFePO4 over lithium-ion",
+     "LiFePO4 lasts 3,000+ cycles. If a listing doesn't say which chemistry it uses, assume fewer cycles."
+    ],
+    [
+     "Output for your devices",
+     "300 W handles electronics; 600 W adds small appliances; 1,500 W+ runs a fridge, coffee maker or microwave."
+    ],
+    [
+     "Warranty and seller",
+     "Five-year warranties are now common from the major brands."
+    ]
+   ],
+   "faq": [
+    [
+     "What's the best power station for the money?",
+     "At our price check, the BLUETTI AC180 ($449, 1,152 Wh) and Anker SOLIX C1000 Gen 2 ($499.99, 1,024 Wh, 2,000 W) offered the most per dollar under $500."
+    ],
+    [
+     "Are cheap power stations safe?",
+     "Stick to listings that state LiFePO4 cells and a warranty. They're less prone to thermal problems and last far longer."
+    ],
+    [
+     "Will prices drop on Black Friday?",
+     "Power stations are among the most heavily discounted categories on Prime Day and Black Friday; check the deals page."
+    ]
+   ]
+  },
+  {
+   "slug": "best-small-power-station-for-camping",
+   "title": "Best Small Power Station for Camping (2026)",
+   "h1": "The best small power stations for camping",
    "description": "Lightweight portable power stations for camping, travel and tailgating — under 15 lb — ranked by portability, value, charging and solar.",
-   "rank_by": "camping", "filter": "weight_lb<=15", "limit": 5,
-   "intro": ["For camping you want something you can carry with one hand that keeps phones, lights, a fan, a camera and maybe a 12 V cooler going for a weekend.",
-             "We rank stations under 15 lb on portability, value, charging speed, solar input and battery longevity. For a 12 V fridge over several days, check the runtime calculator — you may need 500 Wh or an expansion battery."],
-   "criteria": [["Weight vs capacity", "Most 250–300 Wh LiFePO4 units weigh 7–10 lb. Anything lighter is closer to a power bank."],
-                ["Solar input", "A 100–220 W panel can refill a small station in a sunny day."],
-                ["12 V cooler draw", "A 12 V compressor cooler averages 15–25 W, or 350–600 Wh a day."],
-                ["USB-C watts", "100–140 W USB-C charges a laptop without using the AC inverter, which saves energy."]],
-   "faq": [["How long will a 300 Wh power station last camping?", "About 2–3 days of phones, lights and a small fan, or 10–15 hours of a 12 V cooler."],
-           ["Can I charge it from my car?", "Yes, all of these charge from a 12 V car socket, though slowly (about 100–120 W)."],
-           ["Can I take it on a plane?", "Only units under 100 Wh fly without approval; 100–160 Wh units (like the BLUETTI Elite 10 Mini) need airline approval. Larger stations can't fly."]]},
-  {"slug": "best-solar-generator", "title": "Best Solar Generator (2026)", "h1": "The best solar generators (power stations for solar)",
+   "rank_by": "camping",
+   "filter": "weight_lb<=15",
+   "limit": 5,
+   "intro": [
+    "For camping you want something you can carry with one hand that keeps phones, lights, a fan, a camera and maybe a 12 V cooler going for a weekend.",
+    "We rank stations under 15 lb on portability, value, charging speed, solar input and battery longevity. For a 12 V fridge over several days, check the runtime calculator — you may need 500 Wh or an expansion battery."
+   ],
+   "criteria": [
+    [
+     "Weight vs capacity",
+     "Most 250–300 Wh LiFePO4 units weigh 7–10 lb. Anything lighter is closer to a power bank."
+    ],
+    [
+     "Solar input",
+     "A 100–220 W panel can refill a small station in a sunny day."
+    ],
+    [
+     "12 V cooler draw",
+     "A 12 V compressor cooler averages 15–25 W, or 350–600 Wh a day."
+    ],
+    [
+     "USB-C watts",
+     "100–140 W USB-C charges a laptop without using the AC inverter, which saves energy."
+    ]
+   ],
+   "faq": [
+    [
+     "How long will a 300 Wh power station last camping?",
+     "About 2–3 days of phones, lights and a small fan, or 10–15 hours of a 12 V cooler."
+    ],
+    [
+     "Can I charge it from my car?",
+     "Yes, all of these charge from a 12 V car socket, though slowly (about 100–120 W)."
+    ],
+    [
+     "Can I take it on a plane?",
+     "Only units under 100 Wh fly without approval; 100–160 Wh units (like the BLUETTI Elite 10 Mini) need airline approval. Larger stations can't fly."
+    ]
+   ]
+  },
+  {
+   "slug": "best-solar-generator",
+   "title": "Best Solar Generator (2026)",
+   "h1": "The best solar generators (power stations for solar)",
    "description": "The best portable power stations to pair with solar panels, ranked by maximum solar input, capacity and value.",
-   "rank_by": "solar", "filter": "solar_w>=400", "limit": 5,
-   "intro": ["A 'solar generator' is a power station plus solar panels. What matters is how many watts of panels the station accepts: more solar input means a faster refill and more days off-grid.",
-             "We rank stations that accept at least 400 W of solar by solar input first, then capacity, value, battery life and output. Real panels rarely produce their rated watts; plan on about 75% in good sun."],
-   "criteria": [["Solar input watts", "Divide the capacity by solar input and by 0.75 to estimate hours of good sun for a full charge."],
-                ["Voltage and amp limits", "Each station has a voltage window and amp limit (for example 12–60 V, 20 A). Panels must be wired within both."],
-                ["Peak sun hours", "Most of the US gets 4–5 peak sun hours a day. 1,000 W of panels yields roughly 3–4 kWh on a good day."],
-                ["Panels sold separately", "Every station here is sold without panels unless the listing says otherwise."]],
-   "faq": [["How many solar panels do I need?", "Divide your daily watt-hours by about 3.4 (4.5 sun hours × 75%). For 2,000 Wh a day you'd want about 600 W of panels."],
-           ["Can I use any solar panel?", "Any panel whose voltage and current fall inside the station's input limits, with a compatible connector (usually XT60 or Anderson) or an adapter."],
-           ["Can I charge from solar and the wall at once?", "Several models, including the Jackery HomePower 3600 Plus and EcoFlow DELTA 3, accept both for faster charging."]]}
+   "rank_by": "solar",
+   "filter": "solar_w>=400",
+   "limit": 5,
+   "intro": [
+    "A 'solar generator' is a power station plus solar panels. What matters is how many watts of panels the station accepts: more solar input means a faster refill and more days off-grid.",
+    "We rank stations that accept at least 400 W of solar by solar input first, then capacity, value, battery life and output. Real panels rarely produce their rated watts; plan on about 75% in good sun."
+   ],
+   "criteria": [
+    [
+     "Solar input watts",
+     "Divide the capacity by solar input and by 0.75 to estimate hours of good sun for a full charge."
+    ],
+    [
+     "Voltage and amp limits",
+     "Each station has a voltage window and amp limit (for example 12–60 V, 20 A). Panels must be wired within both."
+    ],
+    [
+     "Peak sun hours",
+     "Most of the US gets 4–5 peak sun hours a day. 1,000 W of panels yields roughly 3–4 kWh on a good day."
+    ],
+    [
+     "Panels sold separately",
+     "Every station here is sold without panels unless the listing says otherwise."
+    ]
+   ],
+   "faq": [
+    [
+     "How many solar panels do I need?",
+     "Divide your daily watt-hours by about 3.4 (4.5 sun hours × 75%). For 2,000 Wh a day you'd want about 600 W of panels."
+    ],
+    [
+     "Can I use any solar panel?",
+     "Any panel whose voltage and current fall inside the station's input limits, with a compatible connector (usually XT60 or Anderson) or an adapter."
+    ],
+    [
+     "Can I charge from solar and the wall at once?",
+     "Several models, including the Jackery HomePower 3600 Plus and EcoFlow DELTA 3, accept both for faster charging."
+    ]
+   ]
+  },
+  {
+   "slug": "power-station-gifts-for-campers",
+   "title": "Power Station Gifts for Campers & RV Owners (2026)",
+   "h1": "The best portable power stations to give campers in 2026",
+   "description": "The best portable power station gifts under $600 for campers, van lifers and RV owners: small units for phones and lights, and 1 kWh units for fridges, CPAPs and outages.",
+   "rank_by": "camping",
+   "filter": "price<=600",
+   "limit": 6,
+   "intro": [
+    "A portable power station is a gift a camper will use on every trip: phones, lights, a fan, a camera, even a small fridge, all without a noisy gas generator. It also doubles as backup power at home during an outage.",
+    "Every pick here costs $600 or less. We rank them for camping, which favors portability and value first, then charging speed, solar input and capacity. Use our runtime calculator to check how long each one runs the devices your camper actually brings."
+   ],
+   "criteria": [
+    [
+     "Small or big?",
+     "A 250–300 Wh unit (under 10 lb) charges phones, lights and a laptop for a weekend. A 1 kWh unit (around 25 lb) runs a 12 V fridge, a CPAP or a small heater for much longer."
+    ],
+    [
+     "Solar input",
+     "Campers who stay off-grid for days will want a station that accepts a solar panel. A panel makes a great add-on gift."
+    ],
+    [
+     "Battery chemistry",
+     "LiFePO4 batteries last thousands of cycles, so the gift keeps working for years of trips."
+    ],
+    [
+     "Charging speed",
+     "Fast AC charging (about an hour) means a full battery before leaving, even if they forgot to charge it the night before."
+    ],
+    [
+     "Check the outlets",
+     "Make sure it has the plugs your camper needs: AC outlets, USB-C for laptops and a 12 V car port for fridges."
+    ]
+   ],
+   "faq": [
+    [
+     "What size power station is best for camping?",
+     "For phones, lights and a laptop, about 300 Wh is enough. For a 12 V fridge or a CPAP over several nights, choose around 1,000 Wh."
+    ],
+    [
+     "Can a portable power station run a CPAP while camping?",
+     "Yes. A CPAP without heated humidification draws roughly 30–60 W, so a 1 kWh station can run it for several nights. Check the exact runtime in our calculator."
+    ],
+    [
+     "Is a power station better than a gas generator for camping?",
+     "For most campers, yes: it is silent, has no fumes, can be used inside a tent or van and recharges from solar. Gas generators still win for very high, long-running loads."
+    ]
+   ]
+  }
  ]
 }
